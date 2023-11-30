@@ -83,7 +83,7 @@ const HomePage: NextPage = () => {
       <TwitterLayout>
         <div className="flex flex-col">
           <div className="flex justify-between items-center border-b border-[#2e3134] pb-2 sticky top-0 z-50 bg-black bg-opacity-70 backdrop-blur-md">
-            <div className="pl-3" onClick={() => setSidebar(true)}>
+            <div className="pl-3 sm:hidden block" onClick={() => setSidebar(true)}>
               <Image
                 src={user?.profileImageURL}
                 width={30}

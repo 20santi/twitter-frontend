@@ -11,9 +11,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     if(localStorage.getItem("OWN_TWITTER_TOKEN")) {
-      toast.loading("Please wait", {id: "1"});
       router.push("/home");
-      toast.success("", {id: "1"});
     }
   }, [router])
   
