@@ -7,7 +7,7 @@ import Image from "next/image";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { SlCalender } from "react-icons/sl";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import FeedCard from "../components/Feedcard";
 import { Tweet } from "../../../gql/graphql";
 import { useMemo } from "react";
@@ -17,6 +17,7 @@ import { HiCheckBadge } from "react-icons/hi2";
 
 const UserProfilePage: NextPage = () => {
   const path = usePathname();
+  const router = useRouter();
   const id = path.split("/")[1];
   const { userById } = useCurrentUserById(id);
   const { user: currentUser } = useCurrentUser();
@@ -35,7 +36,7 @@ const UserProfilePage: NextPage = () => {
     <TwitterLayout>
       <div className="flex flex-col ">
         <div className="flex gap-x-8 w-full items-center sticky top-0 bg-transparent bg-opacity-70 z-50 backdrop-blur-md">
-          <div className="ml-5 mt-2">
+          <div className="ml-5 mt-2" onClick={() => router.push("/home")}>
             <BiArrowBack />
           </div>
           <div className="flex flex-col mt-2">
