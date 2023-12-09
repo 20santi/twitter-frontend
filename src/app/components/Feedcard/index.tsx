@@ -201,7 +201,7 @@ const FeedCard: React.FC<FeedCardProps> = (props) => {
                   alt="tweet-image"
                   width={400}
                   height={400}
-                  className="rounded-xl mt-5 border border-slate-600 sm:w-[450px] sm:h-[250px] w-[70%] h-[95%]"
+                  className="rounded-xl mt-5 border border-slate-600 sm:w-[450px] sm:h-[250px] w-[60%] h-[95%]"
                 />
               )}
               <div className=" bg-slate-400"></div>

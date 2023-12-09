@@ -88,7 +88,7 @@ const TwitterLayout: React.FC<twitterLayoutProps> = (props) => {
 
   return (
     <section className="h-screen w-screen bg-black overflow-hidden">
-      <div className="flex w-11/12 h-full sm:max-w-max sm:mx-auto">
+      <div className="w-full flex sm:w-11/12 h-full sm:max-w-max sm:mx-auto">
         {/* sidebar */}
         <div className="xl:w-[250px] w-[70px] hidden sm:flex sm:flex-col justify-between sm:h-screen sm:mt-2 sm:pb-6 overflow-scroll scrollbar-none">
           {user?.role === "Admin" && (
@@ -165,7 +165,7 @@ const TwitterLayout: React.FC<twitterLayoutProps> = (props) => {
         </div>
 
         {/* Feed Section */}
-        <div className="w-[600px] border border-[#202327] overflow-scroll scrollbar-none">
+        <div className="sm:w-[600px] border border-[#202327] overflow-scroll scrollbar-none ">
           {props.children}
         </div>
 

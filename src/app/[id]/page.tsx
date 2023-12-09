@@ -81,7 +81,7 @@ const UserProfilePage: NextPage = () => {
         <div className="flex flex-col gap-y-3 mt-8 ml-4">
           <div className="flex flex-col gap-y-1">
             <div className="flex gap-x-1">
-              <p className="font-extrabold">
+              <p className="font-extrabold sm:text-sm text-[12px]">
                 {userById?.firstName} {userById?.lastName}
               </p>
               {userById?.subscribe === true ? (
@@ -90,13 +90,13 @@ const UserProfilePage: NextPage = () => {
                 </span>
               ) : null}
             </div>
-            <p className="text-[#787979] text-[14px]">
+            <p className="text-[#787979] sm:text-sm text-[12px]">
               @{userById?.firstName}3012139331
             </p>
           </div>
           {/* bio */}
           <div>
-            <p className="">
+            <p className="sm:text-sm text-[12px]">
               web developer || c++ || DSA problem solver || tec enthusiastic
             </p>
           </div>
@@ -106,19 +106,19 @@ const UserProfilePage: NextPage = () => {
               <div className="text-[#787979]">
                 <HiOutlineLocationMarker />
               </div>
-              <p className="text-[#787979]">Kolkata, India</p>
+              <p className="text-[#787979] sm:text-sm text-[12px]">Kolkata, India</p>
             </div>
             <div className="flex gap-x-6">
               <div className="flex gap-x-1 items-center">
                 <PiLinkSimpleBold className="text-[#787979]" />
-                <p className="text-[#FF7A00]">
+                <p className="text-[#FF7A00] sm:text-sm text-[12px]">
                   linkdin.com/in/{userById?.firstName}...
                 </p>
               </div>
               {/* joining date */}
               <div className="flex gap-x-1 items-center">
-                <SlCalender className="text-[#787979] text-[14px]" />
-                <p className="text-[#787979]">Joined August 2023</p>
+                <SlCalender className="text-[#787979] sm:text-sm text-[12px]" />
+                <p className="text-[#787979] sm:text-sm text-[12px]">Joined August 2023</p>
               </div>
             </div>
           </div>
@@ -133,20 +133,20 @@ const UserProfilePage: NextPage = () => {
           </div>
         </div>
         {/* post */}
-        <div className="flex w-full justify-between mt-5">
-          <div className="pt-4 pb-4 pr-6 pl-6 hover:bg-[#181818]">
+        <div className="flex sm:w-full justify-evenly mt-5 sm:text-sm text-[12px]">
+          <div className="pt-4 pb-4 sm:pr-6 sm:pl-6 pr-3 pl-3 cursor-pointer hover:bg-[#181818]">
             <p>Posts</p>
           </div>
-          <div className="pt-4 pb-4 pr-6 pl-6 hover:bg-[#181818]">
+          <div className="pt-4 pb-4 sm:pl-6 pr-3 pl-3 cursor-pointer hover:bg-[#181818]">
             <p>Replies</p>
           </div>
-          <div className="pt-4 pb-4 pr-6 pl-6 hover:bg-[#181818]">
+          <div className="pt-4 pb-4 sm:pl-6 pr-3 pl-3 cursor-pointer hover:bg-[#181818]">
             <p>Highlights</p>
           </div>
-          <div className="pt-4 pb-4 pr-6 pl-6 hover:bg-[#181818]">
+          <div className="pt-4 pb-4 sm:pl-6 pr-3 pl-3 cursor-pointer hover:bg-[#181818]">
             <p>Media</p>
           </div>
-          <div className="pt-4 pb-4 pr-6 pl-6 hover:bg-[#181818]">
+          <div className="pt-4 pb-4 sm:pl-6 pr-3 pl-3 cursor-pointer hover:bg-[#181818]">
             <p>Likes</p>
           </div>
         </div>
