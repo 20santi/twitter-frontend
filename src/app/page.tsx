@@ -17,9 +17,9 @@ export default function Home() {
   
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-black">
-      <div className="flex items-center w-[70%] max-h-max justify-between">
-        <div className="">
-          <FaXTwitter className="text-[400px]" />
+      <div className="sm:flex items-center w-[70%] max-h-max justify-between overflow-y-auto mb-8">
+        <div className="mt-10 mb-16">
+          <FaXTwitter className="sm:text-[400px] text-[50px]" />
         </div>
         {/* sign up */}
         <div className="flex flex-col gap-y-7">

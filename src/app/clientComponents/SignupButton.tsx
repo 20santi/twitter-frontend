@@ -70,7 +70,7 @@ const SignupButton = () => {
         Create account
       </button>
       <div className="w-[360px] text-[14px]">
-        <p>
+        <p className="text-[#787979] mt-1 text-[12px]">
           By signing up, you agree to the{" "}
           <span className="text-[#1A8CD8]">Terms of Service</span> and{" "}
           <span className="text-[#1A8CD8]">Privacy Policy</span>, including{" "}
