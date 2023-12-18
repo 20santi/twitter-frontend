@@ -15,7 +15,7 @@ const SignupButton = () => {
 
   const handleSignin = useCallback(async () => {
     await signIn("google");
-  }, [queryClient]);
+  }, []);
 
   useEffect(() => {
     // Check if the session data is available and has the idToken
