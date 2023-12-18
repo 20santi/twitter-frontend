@@ -1,8 +1,8 @@
-import { graphqlClient } from "@/app/clients/api";
-import { verifyUserGoogleTokenQuery } from "@/app/graphql/query/user";
 import NextAuth, { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { cookies } from 'next/headers'
+import { graphqlClient } from "../../../clients/api";
+import { verifyUserGoogleTokenQuery } from "../../../graphql/query/user";
 
 async function customSignIn(idToken: string) {
   try {
