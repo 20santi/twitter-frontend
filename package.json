@@ -18,6 +18,7 @@
     "axios": "^1.6.0",
     "cookie": "^0.5.0",
     "dotenv": "^16.3.1",
+    "encoding": "^0.1.13",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "js-cookie": "^3.0.5",
